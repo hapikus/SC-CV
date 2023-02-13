@@ -1,0 +1,281 @@
+/* General */
+body{
+    background-color: white;
+}
+/* The emerging W3C standard
+   that is currently Firefox-only */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: lightgray white;
+}
+
+/* Works on Chrome/Edge/Safari */
+*::-webkit-scrollbar {
+    width: 12px;
+}
+
+
+*::-webkit-scrollbar-thumb {
+    background-color: lightgray;
+    border-radius: 20px;
+    border: 3px solid white;
+}
+  
+
+hr {
+    background-color: whitesmoke;
+}
+
+iframe{
+    width: max(33.3vw, 324px);
+    height: max(22.7vw, 135px);
+}
+
+img {
+    pointer-events: none;
+    user-select: none;
+    -webkit-user-select:none;
+    -webkit-touch-callout:none;
+}
+
+.shadowless {
+    box-shadow: none!important;
+}
+
+.code-tags span{
+    font-family: Consolas, monaco, monospace;
+    padding: 2px;
+    background-color: #b7e5c4;
+    background-color: whitesmoke;
+    margin-right: min(1vh, 1vw);
+}
+
+.my-highlight :hover{
+    background-color: whitesmoke;
+}
+
+/* Header */
+#my-title{
+    font-size: 3em;
+    text-align: center;
+}
+
+.my-header{
+    font-size: 1.5em;
+}
+
+#sc-logo-col {
+    float: left;
+    margin-top: 20px;
+}
+
+#sc-logo {
+    width: min(45vh, 27vw, 350px);
+    height: min(45vh, 27vw, 350px);
+    /* width: 300px; */
+    /* height: 300px; */
+    border: whitesmoke 1px solid;
+    box-shadow: min(1vh, 1vw) min(1vh, 1vw) whitesmoke;
+}
+
+@media (max-width: 1520px) {
+    #sc-logo {
+        width: 350px;
+        height: 350px;
+    }
+}
+
+@media (max-width: 1630px) {
+    #my-summary-col {
+        width: 60%;
+    }
+}
+
+@media (max-width: 1550px) {
+    #my-summary-col {
+        width: 50%;
+    }
+}
+
+@media (max-width: 1520px) {
+    #my-summary-col {
+        width: 100%;
+    }
+}
+
+/* Nav Bar */
+
+.my-nav a{
+    color: black;
+}
+
+.my-nav img{
+    height: min(10vh, 10vw);
+    width: min(10vh, 10vw);
+    position: relative;
+}
+
+.my-nav h2{
+    text-align: center;
+}
+
+.my-nav-content {
+    display: flex;
+    justify-content: center;
+}
+
+.my-nav-content ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.my-nav-content li {
+    font-size: min(3h, 3vw);
+    float: left;
+}
+
+
+.my-nav-content li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+.my-nav-content li a:hover {
+    background-color: whitesmoke;
+}
+
+#a-codewars {
+    background-image: url(./images/logo-red-cd.png);
+    background-position: center; 
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* Work Experience */
+.td-logo {
+    width: 20%;
+    text-align: center;
+}
+
+.td-position-name {
+    width: 55%;
+    text-align: center;
+}
+
+.td-period {
+    width: 25%;
+    text-align: left;
+}
+
+.my-work-entry{
+    width: 100%;
+    padding: max(1vh, 1vw);
+    display: flex;
+    justify-content: center;
+}
+
+.my-work-entry ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.my-work-entry-content li{
+    font-size: 1em;
+}
+
+.my-work-entry:hover{
+    background-color: whitesmoke;
+}
+
+#ikea-logo{
+    height: min(7vh, 7vw);
+    width: min(21vh, 21vw);
+    position: relative;
+}
+
+#ibm-logo{
+    height: min(7vh, 7vw);
+    width: min(21vh, 21vw);
+    position: relative;
+}
+
+#nyu-logo{
+    height: min(7vh, 7vw);
+    width: min(21vh, 21vw);
+    position: relative;
+}
+
+/* Education */
+
+#susu-logo{
+    height: min(7vh, 7vw);
+    width: min(21vh, 21vw);
+    position: relative;
+}
+
+#stepik-logo{
+    height: min(7vh, 7vw);
+    width: min(21vh, 21vw);
+    position: relative;
+}
+
+
+/* Projects */
+
+.card-image {
+    height: 250px;
+    border: 1px solid rgba(160,160,160,0.2);
+    background-color: inherit;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+#JS-Games {
+    background-image: url(./images/JS-Games.png);
+    background-size: 100% auto;
+}
+
+.other-projects{
+    margin-top: 2%;
+    color: lightgray;
+}
+
+.other-projects ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.other-projects li {
+    font-size: min(3.5vh, 3.5vw);
+    float: left;
+}
+
+
+.other-projects li a {
+    display: block;
+    color: lightgray;
+    padding: 16px;
+    text-decoration: none;
+}
+
+.other-projects li a:hover{
+    color: gray;
+}
+
+/* Copy Right Logo */
+.my-copyright{
+    margin-top: -5%;
+    margin-bottom: 5%;
+    text-align: center;
+    font-size: 1em;
+}
