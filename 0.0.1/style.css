@@ -1,12 +1,48 @@
+:root {
+    --background-color: #ffffff;
+    --background-color-sec: #f5f5f5;
+    --scrollbar-color: #d3d3d3;
+    --green: #b7e5c4;
+    --card-border: #a0a0a033;
+    --other-project: #808080;
+    --my-nav-cont: black;
+    --text-color: rgba(0,0,0,0.87);
+}
+
+.dark-theme {
+    --background-color: #202020;
+    --background-color-sec: #2a2a2a;
+    --scrollbar-color: #555555;
+    --green: #6daa8b;
+    --card-border: #a0a0a033;
+    --other-project: #a0a0a0;
+    --my-nav-cont: #f5f5f5;
+    --text-color: white;
+}
+
+
+/* Dark theme */
+
+#moon-icon { 
+    height: min(5vh, 5vw);
+    width: min(5vh, 5vw);
+    cursor: pointer; 
+    text-align: bottom;
+}
+
 /* General */
+html {
+    color: var(--text-color);
+}
+
 body{
-    background-color: white;
+    background-color: var(--background-color);
 }
 /* The emerging W3C standard
    that is currently Firefox-only */
 * {
     scrollbar-width: thin;
-    scrollbar-color: lightgray white;
+    scrollbar-color: var(--scrollbar-color) var(--background-color);
 }
 
 /* Works on Chrome/Edge/Safari */
@@ -16,14 +52,14 @@ body{
 
 
 *::-webkit-scrollbar-thumb {
-    background-color: lightgray;
+    background-color: var(--scrollbar-color);
     border-radius: 20px;
-    border: 3px solid white;
+    border: 3px solid var(--background-color);
 }
   
 
 hr {
-    background-color: whitesmoke;
+    background-color: var(--background-color-sec);
 }
 
 iframe{
@@ -45,13 +81,13 @@ img {
 .code-tags span{
     font-family: Consolas, monaco, monospace;
     padding: 2px;
-    background-color: #b7e5c4;
-    background-color: whitesmoke;
+    background-color: var(--green);
+    background-color: var(--background-color-sec);
     margin-right: min(1vh, 1vw);
 }
 
 .my-highlight :hover{
-    background-color: whitesmoke;
+    background-color: var(--background-color-sec);
 }
 
 /* Header */
@@ -74,8 +110,8 @@ img {
     height: min(45vh, 27vw, 350px);
     /* width: 300px; */
     /* height: 300px; */
-    border: whitesmoke 1px solid;
-    box-shadow: min(1vh, 1vw) min(1vh, 1vw) whitesmoke;
+    border: var(--background-color-sec) 1px solid;
+    box-shadow: min(1vh, 1vw) min(1vh, 1vw) var(--background-color-sec);
 }
 
 @media (max-width: 1520px) {
@@ -106,7 +142,7 @@ img {
 /* Nav Bar */
 
 .my-nav a{
-    color: black;
+    color: var(---my-nav-cont);
 }
 
 .my-nav img{
@@ -136,7 +172,6 @@ img {
     float: left;
 }
 
-
 .my-nav-content li a {
     display: block;
     color: black;
@@ -146,7 +181,7 @@ img {
 }
 
 .my-nav-content li a:hover {
-    background-color: whitesmoke;
+    background-color: var(--background-color-sec);
 }
 
 #a-codewars {
@@ -191,7 +226,7 @@ img {
 }
 
 .my-work-entry:hover{
-    background-color: whitesmoke;
+    background-color: var(--background-color-sec);
 }
 
 #ikea-logo{
@@ -231,7 +266,7 @@ img {
 
 .card-image {
     height: 250px;
-    border: 1px solid rgba(160,160,160,0.2);
+    border: 1px solid var(--card-border);
     background-color: inherit;
     background-repeat: no-repeat;
     background-position: center;
@@ -245,7 +280,7 @@ img {
 
 .other-projects{
     margin-top: 2%;
-    color: lightgray;
+    color: var(--scrollbar-color);
 }
 
 .other-projects ul {
@@ -263,13 +298,13 @@ img {
 
 .other-projects li a {
     display: block;
-    color: lightgray;
+    color: var(--scrollbar-color);
     padding: 16px;
     text-decoration: none;
 }
 
 .other-projects li a:hover{
-    color: gray;
+    color: var(--other-project);
 }
 
 /* Copy Right Logo */
