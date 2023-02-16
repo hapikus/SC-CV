@@ -218,7 +218,7 @@ html, body {
     color: var(--header-text);
     text-align: center;
 
-    min-height: 695px;
+    min-height: 625px;
     padding: 40px 0;
 
     display: flex;
