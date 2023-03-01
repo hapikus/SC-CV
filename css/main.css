@@ -436,7 +436,7 @@ html, body {
 }
 
 
-@media (max-width: 790px) {
+@media (max-width: 1199px) {
     .projects {
         justify-content: center;
     }
