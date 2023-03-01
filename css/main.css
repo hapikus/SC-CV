@@ -417,13 +417,20 @@ html, body {
 
 .social {
     display: flex;
-    column-gap: 30px;
+    column-gap: 24px;
     align-items: center;
 }
 
 .social__item-codewars {
-    max-width: 40px;
-    max-height: 40px;
+    max-width: 38px;
+    max-height: 38px;
+}
+
+.social__item-leetcode {
+    background: white;
+    padding: 2px;
+    max-width: 38px;
+    max-height: 38px;
 }
 
 .copyright {
